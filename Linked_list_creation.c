@@ -30,7 +30,7 @@ int main()
     fourth = (struct Node *)malloc(sizeof(struct Node));
  
     // Link first and second nodes
-    head->data = 7;
+    head->data = 7;          //(*head).data=7;
     head->next = second;
  
     // Link second and third nodes
