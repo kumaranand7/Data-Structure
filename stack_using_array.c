@@ -1,8 +1,8 @@
 #include<stdio.h>
 int stack[100],choice,n,top,x,i;
-void push(void);
-void pop(void);
-void display(void);
+// void push(void);
+// void pop(void);
+// void display(void);
 int main()
 {
     //clrscr();
@@ -50,7 +50,7 @@ int main()
 }
 void push()
 {
-    if(top>=n-1)
+    if(top==n-1)
     {
         printf("\n\tSTACK is over flow");
         
@@ -65,7 +65,7 @@ void push()
 }
 void pop()
 {
-    if(top<=-1)
+    if(top==-1)
     {
         printf("\n\t Stack is under flow");
     }
