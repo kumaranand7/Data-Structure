@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<conio.h>
+
+void  main()
+
+{
+
+int temp,i,j,count,arr[20];
+clrscr();
+printf("enter the no of elements:");
+scanf("%d",&count);
+
+printf("enter the elements in the array:");
+for(i=0; i<count; i++)
+scanf("%d",&arr[i]);
+
+for(i=0; i<count; i++)
+{
+for(j=i+1; j<count; j++)
+{
+if (arr[i]>arr[j])
+{
+temp=arr[i];
+   arr[i]= arr[j];
+   arr[j]=temp;
+   
+}
+}
+}
+printf("shorted elements are:");
+for(i=0; i<count; i++)
+printf("%d ",arr[i]);
+ getch();
+
+}
+
+
+
+
